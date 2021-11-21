@@ -1,0 +1,5 @@
+root,test,kx,kxx,ll,< name=test pass=111 >
+root,test,wd,wdd,ll,< name=test pass=111 >
+root,test,test,test,test,yyy,< name=test1 pass=111 >
+root,test,nn,nji,nnn,< name=nn pass=nnn >
+root,test,pp,pop,pop,< name=pp pass=pop >
