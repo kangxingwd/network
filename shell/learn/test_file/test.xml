@@ -1,0 +1,9 @@
+<person>
+    <age value="too young" />
+    <experience value="too simple" name="kx" passwd="1111" age="20" />
+    <experience value="too simple" name="wd" passwd="2222" age="21" />
+    <experience value="too simple" name="rl" passwd="3333" age="22" />
+    <result value="sometimes naive" />
+</person>
+
+
