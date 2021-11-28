@@ -233,7 +233,7 @@ while IFS=',' read -r userid name; do
     echo "userid: $userid, name: $name"
 done <"$input"
 
-# shell注释
+# shell 多行注释
 : <<XXXXX
 echo "-----------------------"
 
@@ -292,7 +292,10 @@ ls -l xxx 1>test_file/out.log 2>test_file/err.log
 
 # 信号捕获
 # trap "echo Goodbye..." EXIT
-trap "echo Goodbye..." EXIT
+function my_exit {
+    echo "echo Goodbye..."
+}
+trap my_exit EXIT
 
 # 恢复信号默认行为 --
 trap -- SIGINT
@@ -338,13 +341,4 @@ function testarray {
 array=(1 2 3 4 5)
 ret=$(testarray ${array[*]})
 echo "ret = ${ret[*]}"
-
-
-# gawk
-echo "My name is Rich" | gawk '{$4="Christine"; print $0}'
-
-# gawk -F: 'BEGIN {$1} {print $1 $7} END {}'
-
-# BEGIN 和 END 分别在遍历文件前后执行命令
-gawk -F: 'BEGIN {print "---start----"} {print $1,$7} END {print "---end--"}' /etc/passwd
 

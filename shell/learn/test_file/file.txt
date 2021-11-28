@@ -1,5 +1,7 @@
+awk.sh
 lib_math.sh
 menu_test.sh
 readme.md
+sed.sh
 test.sh
 test_file
