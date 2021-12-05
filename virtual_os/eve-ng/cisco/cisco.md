@@ -43,12 +43,31 @@ ASA5520(config)# access-group 10 out interface out
 ASA5520(config)# route out 0.0.0.0 0.0.0.0 1.1.5.2 
 ```
 
-# webui  页面
+# webui  页面,  部分cisco设备
 ```s
 Router(config)#ip http server //如果这条命令可以用，说明IOS支持WEB管理
 Router(config)#ip http secure-server //如果这条命令可以用，说明你的IOS还支持HTTPS，安全连接
 
 Router(config)#ip http authentication local //设置口令验证方式是本地验证
 Router(config)#username cisco privilege 15 password 0 cisco //在本地添加用户名cisco和密码cisco
-```
 
+
+# ASAv
+！
+interface gigabitethernet0/0
+nameif inside
+security-level 100
+ip address 192.168.1.1 255.255.255.0
+no shutdown
+!
+http server enable
+http 192.168.1.0 255.255.255.0 inside
+crypto key generate rsa modulus 1024
+username cisco password cisco
+ssh 192.168.1.0 255.255.255.0 inside
+aaa authentication ssh console LOCAL
+call-home
+license smart
+feature tier standard
+throughput level 2G
+```

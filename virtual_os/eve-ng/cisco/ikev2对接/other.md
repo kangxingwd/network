@@ -59,3 +59,43 @@ end
 ```
 
 
+
+# 
+```s
+show crypto isakmp sa 
+show crypto ipsec sa
+show crypto ikev2 sa
+show crypto engine connections active 
+```
+
+# 其他命令
+```s
+clear crypto sa
+config t
+logging buffered 409600
+logging buffered debugging
+logging console debugging
+crypto ikev2 diagnose error 1000
+exit
+debug crypto ipsec
+debug crypto isakmp
+debug crypto ikev2
+debug crypto ikev2 error
+debug crypto ikev2 packet
+debug crypto isakmp error
+debug crypto ipsec message
+debug crypto ipsec states
+debug crypto isakmp error
+debug crypto ikev2 internal
+
+no debug crypto ipsec
+no debug crypto isakmp
+no debug crypto ikev2
+no debug crypto ikev2 error
+no debug crypto ikev2 packet
+no debug crypto isakmp error
+no debug crypto ipsec message
+no debug crypto ipsec states
+no debug crypto isakmp error
+no debug crypto ikev2 internal
+```
