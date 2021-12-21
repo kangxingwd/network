@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "vector": "c",
+        "xstring": "c",
+        "xutility": "c",
+        "initializer_list": "c",
+        "type_traits": "c",
+        "thread_queue.h": "c",
+        "xiosbase": "c"
+    }
+}

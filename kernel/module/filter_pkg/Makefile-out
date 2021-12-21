@@ -1,0 +1,32 @@
+################################################################################
+# 
+# Copyright(c) Sinfor Technologies Co., Ltd.. All rights reserved.
+# 
+# This program is free software; you can redistribute it and/or modify it 
+# under the terms of the GNU General Public License as published by the Free 
+#
+################################################################################
+
+DIRS = modules 
+all:
+	echo $(DIRS)
+	for i in $(DIRS); do \
+		if [ -d $$i ]; then \
+			echo make -C $$i; \
+			make -C $$i; \
+		fi \
+	done
+
+clean:
+	for i in $(DIRS); do \
+		if [ -d $$i ]; then \
+			make clean -C $$i; \
+		fi \
+	done
+
+install:
+	for i in $(DIRS); do \
+		if [ -d $$i ]; then \
+			make install -C $$i; \
+		fi \
+	done
