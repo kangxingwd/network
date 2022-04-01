@@ -76,13 +76,25 @@ unl_wrapper -a fixpermissions
 - 集成镜像默认密码：
 - asav 进特权模式必须先设置密码
 - veos 账号为admin 直接回车
-- 山石 账号密码均为hillstone
+- 山石 账号密码均为 hillstone
 - 华为ar1000v 账号密码均为super
 - 华为usg6kv  账号为admin 直接回车
 - vyos  账号密码均为vyos
 - routeros 账号为admin密码为空直接回车
 
+## 华为 usg6000v2
+- 后台      
+- 页面默认  admin/Admin@123
+- 修改后    admin/Sangfor123
+
+## - 山石 账号密码均为 hillstone
+- 后台      hillstone/hillstone
+- 页面默认  hillstone/hillstone
+- 修改后    hillstone/Sangfor123
+
 # eve-ng 教程视频
 - https://www.emulatedlab.com/forum.php?mod=viewthread&tid=1465&fromuid=1692
 
+# vsphere 
+- 使用 EVE-NG 需要在虚拟交换机 开启混杂和伪传输  ( https://zhuanlan.zhihu.com/p/354207977 )
 

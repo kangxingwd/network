@@ -40,3 +40,19 @@ firewall zone trust
  https://xxx:8443  admin Admin@123
 
  
+
+# 问题
+- https://blog.csdn.net/MAsunshine/article/details/109222368
+- https://support.huawei.com/enterprise/zh/knowledge/EKB1100007825
+
+```s
+interface g 0/0/1
+undo ip binding vpn-instance default
+
+
+
+firewall zone trust
+add interface GigabitEthernet 0/0/0
+display zone
+```
+
