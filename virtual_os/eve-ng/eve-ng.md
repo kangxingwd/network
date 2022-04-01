@@ -48,7 +48,7 @@ root/eve
 # 导入 qemu
 # 见 emulatedlab 论坛
 # 1、 下载镜像 
-#   1) 百度网盘： 心奋斗吧  软件->EVE-NG
+#   1) 百度网盘： 13227018332  软件-other_soft->软件->EVE-NG
 #   2) https://www.emulatedlab.com/forum.php?mod=viewthread&tid=939
 # 2、解压后，上传到eve-ng 后台目录
 

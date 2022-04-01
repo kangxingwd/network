@@ -2,7 +2,8 @@
 #include <stdlib.h>
 #include <sys/types.h>
 #include <unistd.h>
-//#include <libthread.h>
+#include <pthread.h>
+#include <semaphore.h>
 
 static int count = 0;
 
