@@ -155,3 +155,12 @@ gawk 'BEGIN{x = "testing"; print toupper(x); print length(x) }'
 # strftime(format [,timestamp])  将当前时间的时间戳或timestamp（如果提供了的话）转化格式化日期（采用shell函数date()的格式）
 # systime( ) 返回当前时间的时间戳
 
+
+# ip字符串
+echo "10.1.2.3" | awk -F'.' '{a=$1*2**24;b=$2*2**16;c=$3*2**8;d=$4;e=a+b+c+d;print e}'
+167838211
+echo "167838211" | awk '{a=0xFF000000;b=0xFF0000;c=0xFF00;d=0xFF;e=rshift(and($1,a),24);f=rshift(and($1,b),16);g=rshift(and($1,c),8);h=and($1,d);printf("%d.%d.%d.%d\n",e,f,g,h)}'
+10.1.2.3
+
+rshift 需要 gawk
+apt-get install gawk 
