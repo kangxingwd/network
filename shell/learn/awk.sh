@@ -164,3 +164,13 @@ echo "167838211" | awk '{a=0xFF000000;b=0xFF0000;c=0xFF00;d=0xFF;e=rshift(and($1
 
 rshift 需要 gawk
 apt-get install gawk 
+
+# 执行命令
+awk 'BEGIN {system("pwd")}'
+# 拼接命令
+echo "sh601236" | awk '{cmd = "curl -X GET http://hq.sinajs.cn/list="$0; system(cmd);}'
+
+awk 'BEGIN {print "pwd" | "sh"}'
+echo "pwd" | awk '{print $0 | "sh"}'
+awk '{print "执行命令："$0; print $0 | "sh"; print "
+
