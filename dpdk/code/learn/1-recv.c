@@ -119,6 +119,10 @@ static void ng_port_init(void)
 				test_ports_eth_addr[portid].addr_bytes[3],
 				test_ports_eth_addr[portid].addr_bytes[4],
 				test_ports_eth_addr[portid].addr_bytes[5]);
+        
+        /* Enable RX in promiscuous mode for the Ethernet device. */
+        // 5. 混杂模式收包
+        rte_eth_promiscuous_enable(portid);
 	}
 
     printf("port init ok!\n");

@@ -83,7 +83,7 @@ unl_wrapper -a fixpermissions
 - routeros 账号为admin密码为空直接回车
 
 ## 华为 usg6000v2
-- 后台      
+- 后台      admin
 - 页面默认  admin/Admin@123
 - 修改后    admin/Sangfor123
 
