@@ -182,7 +182,7 @@ int main()
     while (1) {
 
         LOG_DEBUG_S("########################## sa cache \n");
-        // nl_cache_dump(sa_ct, &params);
+        nl_cache_dump(sa_ct, &params);
 
         LOG_DEBUG_S("########################## sp cache \n");
         nl_cache_dump(sp_ct, &params);

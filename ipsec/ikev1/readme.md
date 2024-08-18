@@ -127,3 +127,12 @@
 
 2、在野蛮模式中，ID信息（IP地址或者主机名）在消息1、2中就已经发送了，对方可以根据ID信息查找到对应的预共享密钥，从而计算出SKEYID。
 https://www.51sjk.com/b33b132786/
+
+
+
+7c5f890dc9c2d355b961587a16793db52faadc41c9cbd91b8ad6f24ff4385429
+2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824
+
+
+Name: hmac(sha256) Key len(bits): 256 Trunc len(bits): 128
+
